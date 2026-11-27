@@ -1,7 +1,7 @@
 /**
- * BudgetBuddy — Module 3: Expense & Income Management
- * Core CRUD operations for transactions with search, multi-criteria filtering,
- * and automatic synchronization with account balances.
+ * BudgetBuddy — Module: Transaction & Ledger Operations
+ * Developed by: Team Member 2 (Financial Logic & Ledger Systems Engineer)
+ * Scope: CRUD operations, double-entry balance adjustment, and multi-criteria search filtering.
  */
 
 window.BudgetBuddy = window.BudgetBuddy || {};

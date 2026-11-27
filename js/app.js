@@ -124,6 +124,11 @@ BudgetBuddy.App = (function () {
       case 'analytics':
         renderAnalyticsView();
         break;
+      case 'react-lab':
+        if (window.BudgetBuddy?.React?.init) {
+          window.BudgetBuddy.React.init();
+        }
+        break;
       case 'admin':
         renderAdminView();
         break;
@@ -264,6 +269,11 @@ BudgetBuddy.App = (function () {
           upcomingList.appendChild(li);
         });
       }
+    }
+
+    // Initialize or refresh React 19 Components on Dashboard
+    if (window.BudgetBuddy?.React?.init) {
+      window.BudgetBuddy.React.init();
     }
   }
 

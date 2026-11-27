@@ -1,6 +1,7 @@
 /**
- * BudgetBuddy — Module 1: Authentication & Role Management
- * Handles login, registration, session checks, and role redirection (User vs Admin).
+ * BudgetBuddy — Module: Authentication & Access Control
+ * Developed by: Team Member 1 (Data Architect & Security Engineer)
+ * Scope: Session management, credential verification, and Role-Based Access Control.
  */
 
 window.BudgetBuddy = window.BudgetBuddy || {};

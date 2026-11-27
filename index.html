@@ -61,6 +61,9 @@
       <a href="#analytics" class="nav-link" data-tab="analytics">
         <span class="nav-icon">📈</span> Analytics &amp; Reports
       </a>
+      <a href="#react-lab" class="nav-link" data-tab="react-lab">
+        <span class="nav-icon">⚛️</span> React Lab
+      </a>
       <!-- Admin Tab (Visible only to Admin users) -->
       <a href="#admin" class="nav-link nav-link-admin" data-tab="admin" id="tab-admin-nav" style="display: none;">
         <span class="nav-icon">🛡️</span> Admin Console
@@ -228,6 +231,21 @@
             </ul>
             <p class="empty-hint" id="dash-recent-empty" style="display: none;">No transactions logged yet.</p>
           </div>
+        </div>
+      </div>
+
+      <!-- ==================== REACT 19 INTERACTIVE WIDGETS ==================== -->
+      <div style="margin-top: 24px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;">
+          <h2 style="font-size: 1.15rem; color: var(--ledger-green); margin: 0; display: flex; align-items: center; gap: 8px;">
+            <span class="react-badge">⚛️ React 19 State Engine</span>
+            <span>Interactive Financial Lab &amp; Simulator</span>
+          </h2>
+          <span style="font-size: 0.8rem; color: #777;">Real-time State &bull; Zero Server Latency</span>
+        </div>
+        <div class="dashboard-columns">
+          <div class="dash-col" id="react-quick-logger-mount"></div>
+          <div class="dash-col" id="react-budget-simulator-mount"></div>
         </div>
       </div>
     </section>
@@ -566,6 +584,30 @@
       </div>
     </section>
 
+    <!-- ==================== VIEW: REACT 19 FINANCIAL LAB ==================== -->
+    <section id="view-react-lab" class="view-section">
+      <div style="margin-bottom: 24px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+              <span class="react-badge" style="font-size: 0.8rem; padding: 4px 10px;">⚛️ React 19 Component Suite</span>
+              <h2 style="font-size: 1.5rem; color: var(--ledger-green); margin: 0;">React Financial Intelligence Lab</h2>
+            </div>
+            <p style="color: var(--ink-muted); font-size: 0.88rem; margin: 0;">
+              Declarative state management using React Hooks (<code>useState</code>, <code>useMemo</code>, <code>createRoot</code>) synchronizing with BudgetBuddy storage.
+            </p>
+          </div>
+          <button type="button" class="primary-btn btn-sm" onclick="BudgetBuddy.React && BudgetBuddy.React.init && BudgetBuddy.React.init()">
+            🔄 Re-mount React Tree
+          </button>
+        </div>
+      </div>
+
+      <div id="react-lab-mount">
+        <!-- Rendered by React 19 Component Tree -->
+      </div>
+    </section>
+
     <!-- ==================== VIEW 9: SETTINGS & DATA ==================== -->
     <section id="view-settings" class="view-section">
       <div class="settings-grid">
@@ -832,6 +874,9 @@
     <p><strong>BudgetBuddy</strong> &bull; Front End Development Project &bull; Strictly HTML5, CSS3 &amp; Modular JavaScript</p>
   </footer>
 
+  <!-- ==================== REACT 19 BROWSER RUNTIME ==================== -->
+  <script src="js/vendor/react-browser-bundle.js"></script>
+
   <!-- ==================== MODULAR JAVASCRIPT ARCHITECTURE ==================== -->
   <script src="js/storage.js"></script>
   <script src="js/auth.js"></script>
@@ -844,5 +889,8 @@
   <script src="js/admin.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/app.js"></script>
+
+  <!-- ==================== REACT 19 INTERACTIVE COMPONENTS ==================== -->
+  <script src="js/react-components.js"></script>
 </body>
 </html>

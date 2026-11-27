@@ -1,7 +1,7 @@
 /**
- * BudgetBuddy — Storage & Data Layer Module
- * Simulated persistence layer using localStorage.
- * Pre-seeded with realistic demo data for User and Admin roles.
+ * BudgetBuddy — Module: Storage & Data Architecture
+ * Developed by: Team Member 1 (Data Architect & Security Engineer)
+ * Scope: LocalStorage persistence engine, schema migrations, seed generator & audit logger.
  */
 
 window.BudgetBuddy = window.BudgetBuddy || {};

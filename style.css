@@ -1424,6 +1424,44 @@ input:checked + .slider:before {
   background: var(--card-bg);
 }
 
+/* ---------- React 19 Integration Styles ---------- */
+.react-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(22, 56, 44, 0.08);
+  border: 1px solid var(--gold);
+  color: var(--ledger-green);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 12px;
+  letter-spacing: 0.3px;
+}
+
+.react-card {
+  border-top: 3px solid var(--gold);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.react-card:hover {
+  box-shadow: 0 6px 18px rgba(22, 56, 44, 0.08);
+}
+
+.notice-success {
+  background: var(--income-soft, #e6f6ee);
+  border: 1px solid var(--income, #1e7e48);
+  color: var(--income, #1e7e48);
+  font-weight: 600;
+}
+
+.notice-danger {
+  background: var(--danger-soft, #fde8e7);
+  border: 1px solid var(--danger, #a4342a);
+  color: var(--danger, #a4342a);
+  font-weight: 600;
+}
+
 /* ---------- Print Stylesheet ---------- */
 @media print {
   body {
